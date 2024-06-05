@@ -1,0 +1,1053 @@
+@font-face{
+    font-family: setaFont;
+    src: url(./../fonts/Seta\ Reta\ NF\ W01\ Regular.ttf);
+}
+@font-face{
+    font-family: bruumBoldFont;
+    src: url(https://datamatixgroup.com/asset/fonts/Bruum\ FY\ Bold.otf);
+}
+@font-face{
+    font-family: acuminFont;
+    src: url(./../fonts/Acumin\ Pro\ Medium.otf);
+}
+@font-face{
+    font-family: acuminLightFont;
+    src: url(./../fonts/Acumin\ Pro\ Light.otf);
+}
+@font-face{
+    font-family: newJuneBoldFont;
+    src: url(./../fonts/NewJune-Bold.otf);
+}
+@font-face{
+    font-family: brumeFont;
+    src: url(./../fonts/Bruum\ FY\ Black.otf);
+}
+@font-face{
+    font-family: bruumLightFont;
+    src: url(https://datamatixgroup.com/asset/fonts/Bruum\ FY\ Light.otf);
+}
+
+*{
+    font-family: acuminFont;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* start home sreen */
+
+/* start header */
+header{
+    position: relative;
+    width: 100%;
+    /* min-height: 170px; */
+    /* border-bottom: 4px solid #633289; */
+    margin-bottom: 0;
+}
+
+header .left-part{
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+}
+header .right-part .nav1{
+    background-color: #f1f1f2;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+}
+header .right-part .nav1 p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 30px;
+    text-align: center;
+    font-family: bruumLightFont;
+}
+header .right-part .nav1 .langs{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+header .right-part .nav1 .langs img{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+header .right-part .nav1 button{
+    border: none;
+    font-size: 14px;
+}
+header .right-part .nav2{
+    background-color: #be1f2e;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .nav2 ul li{
+    position: relative;
+    cursor: pointer;
+    
+}
+header .nav2 ul li:not(:last-child)::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    bottom: 2px;
+    background-color: #fff;
+}
+header .right-part .nav2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: bruumLightFont;
+    margin-right: 16px;
+}
+header .right-part .nav3{
+    background-color: #fff;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+header .right-part .nav3 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16x;
+    margin-right: 16px;
+    font-family: bruumLightFont;
+}
+header .nav3 ul li{
+    position: relative;
+    cursor: pointer;
+    margin-right: 0 !important;
+}
+header .nav3 ul li:not(:last-child)::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    bottom: 2px;
+    background-color: #000;
+    right: 5px;
+}
+/* end header */
+
+.counter-top{
+    background-color: rgba(240,240,241,255);
+    padding: 20px 30px;
+}
+.counter-top .btns {
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    width: 90%;
+}
+.counter-top .btns button{
+    font-family: acuminLightFont;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #f1efef;
+}
+.counter-top .btns .btn-primary{
+    background-color: #633289;
+    border-color: #633289;
+}
+.counter-top p{
+    font-family: bruumLightFont;
+    font-size: 16px;
+    margin-bottom: 0;
+}   
+.counter-top button.btn{
+    font-family: bruumLightFont;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: #be1f2e;
+    border-color: #be1f2e;
+}   
+.counter-top button.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+/* start counter */
+.counter{
+    margin: 30px 0;
+}
+.counter h2{
+    color: #be1f2e;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: acuminFont;
+    margin: 5px;
+}
+.counter i{
+    font-size: 22px;
+    color: #888686;
+}
+.counter p{
+    color: #888686;
+    font-family: acuminLightFont;
+}
+/* end counter */
+
+/* start duration */
+.duration .cards{
+    width: 100%;
+    display: inline-flex;
+}
+.duration .cards .card{
+    width: 23%;
+    min-height: 180px;
+    margin-right: 2%;
+    border-radius: 15%;
+    background-color: #be1f2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.duration .cards .card:hover{
+    background-color: #f14153;
+}
+.duration .cards .card h4{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: acuminFont;
+}
+.duration .cards .card h6{
+    font-size: 20px;
+    font-family: acuminLightFont;
+    color: #f3f3f3;
+}
+.duration .calendar{
+    margin-bottom: 5%;
+}
+.duration .calendar h6{
+    font-size: 25px;
+    line-height: 25px;
+    font-family: acuminLightFont;
+}
+.duration .btn-primary{
+    background-color: #be1f2e;
+    border-color: #be1f2e;
+}
+.duration .btn-primary:hover{
+    background-color: #f3384b;
+    border-color: #f3384b;
+}
+/* end duration */
+
+.datamatix-section .container{
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #fab6bd;
+}
+.datamatix-section h3{
+    font-family: newJuneBoldFont;
+    font-size: 28px;
+    border-left: 4px solid #be1f2e;
+    color: #be1f2e;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.datamatix-section .lists ul li{
+    font-family: acuminLightFont;
+    text-transform: capitalize;
+}
+.datamatix-section p{
+    font-family: acuminLightFont;
+    font-size: 21px;
+    line-height: 28px;
+}
+.datamatix-section a{
+    color: #be1f2e !important;
+    font-family: acuminLightFont;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* start why-attend */
+.why-attend{
+    margin-bottom: 40px;
+}
+.why-attend h4, .makers-attend h4, .talks h4, .leaders h4{
+    color: #be1f2e;
+    font-family: brumeFont;
+    margin-bottom: 25px;
+}
+.why-attend .card{
+    height: 590px;
+    position: relative;
+}
+.why-attend .card .card-body .card-title{
+    color: #be1f2e;
+    font-family: brumeFont;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.why-attend .card .card-body .card-text{
+    font-family: acuminLightFont;
+    font-size: 20px;
+    line-height: 26px;
+}
+.why-attend .card .card-body a{
+    position: absolute;
+    bottom: 20px;
+    background-color: #be1f2e;
+    border-radius: 0;
+    border-color: #be1f2e;
+}
+/* end why-attend */
+
+/* start makers-attend */
+.makers-attend .border{
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.makers-attend .border p{
+    color: #4c4848;
+}
+.makers-attend .border1{
+    border: 2px solid #219cb6 !important;
+}
+.makers-attend .border2{
+    border: 2px solid #c7a870 !important;
+}
+.makers-attend .border3{
+    border: 2px solid #40478b !important;
+}
+.makers-attend .border4{
+    border: 2px solid #4d85b8 !important;
+}
+.makers-attend .border5{
+    border: 2px solid #72a83d !important;
+}
+.makers-attend .border6{
+    border: 2px solid #c3a1a5 !important;
+}
+.makers-attend .border7{
+    border: 2px solid #5b7472 !important;
+}
+.makers-attend .border8{
+    border: 2px solid #4e9cca !important;
+}
+.makers-attend .border9{
+    border: 2px solid #82bec9 !important;
+}
+.makers-attend .border10{
+    border: 2px solid #ed66a7 !important;
+}
+.makers-attend .border11{
+    border: 2px solid #ff8302 !important;
+}
+.makers-attend .border12{
+    border: 2px solid #c17bbc !important;
+}
+.makers-attend .border13{
+    border: 2px solid #a96b7e !important;
+}
+.makers-attend .border14{
+    border: 2px solid #a96b7e !important;
+}
+.makers-attend .border15{
+    border: 2px solid #859897 !important;
+}
+.makers-attend .border16{
+    border: 2px solid #7dc5ad !important;
+}
+.makers-attend .border17{
+    border: 2px solid #cce1ef !important;
+}
+/* end makers-attend */
+
+/* start talks */
+.talks{
+    margin: 30px 0;
+}
+.talks h6{
+    font-family: acuminLightFont;
+    font-size: 20px;
+    line-height: 22px;
+}
+.talks .talk-sections{
+    margin-top: 30px;
+    width: 90%;
+}
+.talks .talk-sections h5{
+    border-bottom: 1px solid;
+    font-family: acuminFont;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.talks .talk-sections p{
+    font-family: acuminLightFont;
+    font-size: 19px;
+}
+/* end talks */
+
+/* start leaders */
+.leaders{
+    margin: 30px 0;
+}
+.leaders h6{
+    /* font-family: acuminLightFont; */
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+.leaders .card{
+    /* border-radius: 20px; */
+    border: none;
+}
+.leaders .card .card-img-top{
+    /* border-radius: 20px !important; */
+    height: 250px;
+}
+.leaders .card .card-body h5{
+    font-family: acuminFont;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.leaders .card .card-body p{
+    font-family: acuminLightFont;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+/* end leaders */
+
+/* start conversation */
+.conversation .conv-top{
+    text-align: center;
+    margin: 25px auto;
+}
+.conversation .conv-top .btn-primary{
+    background-color: #633289;
+    border-color: #633289;
+    margin-bottom: 30px;
+    font-size: 24px;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conversation .conv-top h4{
+    color: #633289;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.conversation .conv-top p{
+    font-family: acuminLightFont;
+    font-size: 20px;
+    margin: 30px auto;
+    line-height: 28px;
+    width: 80%;
+}
+.conversation .learn-section h4{
+    font-size: 30px;
+    font-family: acuminFont;
+    color: #633289;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.conversation .learn-section p{
+    font-size: 20px;
+    font-family: acuminLightFont;
+    line-height: 30px;
+}
+/* end conversation */
+
+/* start banners */
+.banner_title{
+    font-family: newJuneBoldFont;
+    margin: 35px auto;
+    width: 90%;
+}
+.main-banner img{
+    width: 100%;
+}
+.banner{
+    border-bottom: 10px solid #633289;
+    width: 100%;
+    height: 780px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 0;
+}
+.banner.bannerLeft {
+    background-position: left center;
+}
+.banner.bannerRight {
+    background-position: right center;
+}
+.banner.bannerRight .banner-text{
+    margin-left: 5%;
+}
+.banner .banner-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-1{
+    background-image: url(./../img/img_2-03.jpg);
+    margin-bottom: 30px;
+}
+.banner-2{
+    background-image: url(./../img/img_3-03.jpg);
+}
+.banner-3{
+    background-image: url(./../img/img_4-03.jpg);
+}
+.banner-4{
+    background-image: url(./../img/img_5-03.jpg);
+}
+
+
+.banner .banner-text h3{
+    position: relative;
+    color: #633289;
+    font-family: newJuneBoldFont;
+    font-size: 30px;
+    /* margin-top: 70%; */
+}
+.banner .banner-text hr{
+    border-top: 2px solid #633289;
+    width: 70%;
+    margin-left: 0;
+    border-width: 1px;
+    display: inline-flex;
+}
+.banner-2 .banner-text hr{
+    margin-right: 0;
+}
+/* .banner-2 .banner-text h3 ,
+.banner-3 .banner-text h3 ,
+.banner-5 .banner-text h3 {
+    margin-top: 69%;
+} */
+.banner .banner-text p{
+    font-family: acuminLightFont;
+    font-size: 18px;
+    /* margin-top: 20px; */
+}
+.banner .banner-text .btn-primary{
+    font-family: 'acuminLightFont';
+    background-color: #633289;
+    border: #633289;
+    border-radius: 3px;
+    padding: 4px 14px;
+}
+/* end banners */
+
+/* start gallery */
+.gallery{
+    margin: 30px 0;
+}
+.gallery img.img-fluid{
+    margin-bottom: 20px;
+}
+/* end gallery */
+
+.footer-top h4{
+    font-family: newJuneBoldFont;
+    width: 90%;
+    margin: auto;
+}
+
+/* start footer */
+footer{
+    padding: 50px 0 0;
+    background-color: rgba(240,240,241,255);
+    margin-top: 30px;
+}
+footer .logo {
+    text-align: center;
+}
+footer .logo span{
+    font-family: boldFont;
+}
+footer h5{
+    color: #be1f2e;
+    font-size: 17px;
+}
+footer .links span{
+    color: #3d3b3b;
+    font-size: 16px;
+    font-family: acuminLightFont;
+    cursor: pointer;
+}
+footer .links span:hover{
+    color: #e61025;
+    font-weight: 700;
+}
+footer .subscribe-label{
+    color: #be1f2e;
+    font-size: 17px;
+}
+footer .icon-download img{
+    height: 40px;
+}
+footer p.footr{
+    font-size: 15px;
+    font-family: acuminLightFont;
+    margin-top: 10px;
+}
+footer .copy-right{
+    margin-top: 50px;
+    background-color: #be1f2e;
+    color: #fff;
+}
+footer .copy-right p{
+    font-size: 15px;
+    font-family: bruumLightFont;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    color: #ddd6d6;
+}
+footer form input, footer form .btn{
+    max-height: 35px;
+}
+footer form .btn{
+    font-size: 15px;
+    border-color: #be1f2e;
+    background-color: #be1f2e;
+}
+footer form .btn:hover{
+    background-color: #f04152;
+    border-color: #f04152;
+}
+/* end footer */
+
+/* start home sreen */
+
+/* start media query */
+@media only screen and (min-width: 1400px) {
+    .banner .banner-text h3 {
+        margin-top: 65% !important;
+    }
+}
+@media only screen and (max-width: 1199px) {
+   .duration button{
+    font-size: 14px;
+   }
+}
+@media only screen and (max-width: 1109px) {
+    .counter-top .btns {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    header .nav2 ul li:not(:last-child)::after,
+    header .nav3 ul li:not(:last-child)::after {
+        position: relative;
+    }
+    .counter h2 {
+        font-size: 24px;
+    }
+    .banner .banner-text{
+        position: relative;
+    }
+    .why-attend .card{
+        width: 14rem !important;
+    }
+    .why-attend .card .card-body .card-title {
+        font-size: 19px;
+    }
+    .why-attend .card .card-body .card-text{
+        font-size: 16px;
+    }
+    .makers-attend .border{
+        height: 125px;
+        font-size: 12px;
+    }
+    .talks .talk-sections h5{
+        font-size: 18px;
+    }
+    .leaders .card{
+        margin-bottom: 30px;
+        width: 18rem !important;
+    }
+    .conversation .learn-section h4 {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .conversation .learn-section p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .banner .banner-text h3 {
+        font-size: 25px;
+        margin-top: 100%;
+    }
+    .banner .banner-text h3 br{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    header .nav2 {
+        padding: 3px 0;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .leaders .card{
+        width: 14rem !important;
+    }
+}
+@media only screen and (max-width: 842px) and (min-width: 768px)  {
+    .counter-top button.btn{
+        font-size: 11px;
+    }
+    .counter h2 {
+        font-size: 26px;
+    }
+    .counter-top p{
+        font-size: 14px;
+    }
+    .datamatix-section p {
+        font-size: 18px;
+    }
+    .duration .cards .card h4 {
+        font-size: 30px;
+    }
+    .duration .cards .card h6{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header{
+        border-bottom: none;
+    }
+    header .right-part{
+        position: relative;
+        width: 100%;
+    }
+    header .left-part {
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .datamatix-section br{
+        display: none;
+    }
+    .counter-top button.btn{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .duration .cards .card {
+        min-height: 150px;
+        border-radius: 10%;
+    }
+    .duration .cards .card h4{
+        font-size: 30px;
+    }
+    .duration .cards .card h6{
+        font-size: 18px;
+    }
+    .duration .calendar h6 {
+        font-size: 22px;
+    }
+    .duration .calendar {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    .duration button{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+    .datamatix-section {
+        width: 90%;
+        margin: auto;
+    }
+    .datamatix-section h3{
+        font-size: 20px;
+    }
+    .datamatix-section p {
+        font-size: 14px;
+    }
+    .why-attend h4, .makers-attend h4, .talks h4, .leaders h4{
+        text-align: center;
+    }
+    .why-attend .card{
+        width: 70% !important;
+        margin: 10px auto;
+        height: 550px;
+    }
+    .makers-attend .border{
+        height: 100px;
+        font-size: 13px;
+    }
+    .talks .talk-sections, .talks h6 , .leaders h6{
+        text-align: center;
+    }
+    .talks .talk-sections{
+        margin: 20px auto;
+    }
+    .leaders .card{
+        width: 14rem !important;
+    }
+    .conversation .connect{
+        flex-direction: column-reverse;
+    }
+    .conversation .learn-section{
+        text-align: center;
+    }
+    .conversation .learn-section h4{
+        margin-top: 25px;
+    }
+    .conversation .learn-section img{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .banner_title{
+        font-size: 22px;
+        text-align: center;
+    }
+    .banner{
+        width: 100%;
+        height: 400px;
+    }
+    .banner .banner-text h3 {
+        font-size: 24px;
+    }
+    .banner .over{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .8;
+        z-index: 99;
+    }
+    .banner .banner-text h3{
+        margin-top: 30%;
+    }
+    .banner .banner-text hr {
+       margin: auto;
+        width: 50%;
+    }
+    .banner .banner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .banner .banner-text h3 br, .banner-text p br {
+        display: none;
+    }
+    .banner .banner-text p{
+        color: #cfc6c6;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .footer-top h4{
+        width: 100%;
+        font-size: 21px;
+    }
+    footer .logo{
+        margin-bottom: 20px;
+    }
+    footer .icon-download{
+        width: 50%;
+        margin: 5px auto;
+    }
+    footer .social{
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+@media only screen and (max-width: 575px) {
+    /* header .nav1{
+        padding-bottom: 15%;
+    } */
+    header .nav2 {
+        padding: 10px 0;
+    }
+    header .nav2 ul li {
+        font-size: 12px;
+    }
+    .counter-top .btns {
+        margin-top: 15px;
+    }
+    .counter-top .btns .btn {
+        width: 100%;
+        margin: 7px auto;
+    }
+    .leaders .card{
+        width: 20rem !important;
+        margin: 15px auto;
+    }
+    .banner .banner-text h3 {
+        margin-top: 35%;
+        font-size: 21px;
+    }
+    .banner .banner-text hr{
+        width: 60%;
+        margin: auto !important;
+    }
+    .banner .banner-text {
+        text-align: center;
+    }
+    .gallery img{
+        margin: -10px auto;
+        display: block;
+        width: 90%;
+    }
+     .datamatix-section ul li{
+        font-size: 14px;
+        line-height: 21px;
+    }   
+    .footer-top h4{
+        width: 85%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer h5 {
+        font-size: 15px;
+    }
+    footer .links span {
+        font-size: 13px;
+    }
+    footer .copy-right {
+        margin-top: 30px;
+    }
+    footer .copy-right p {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 558px) {
+    header .nav1 ul li {
+        margin-left: 5px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 505px) {
+    header .nav1 .langs {
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .banner .banner-text hr{
+        width: 75%;
+    }
+    .banner .banner-text h3 {
+        margin-top: 40%;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .duration .cards .card {
+        min-height: 120px;
+    }
+    .duration .cards .card h4 {
+        font-size: 25px;
+    }
+    .duration .cards .card h6 {
+        font-size: 15px;
+    }
+    .duration .calendar h6 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .duration button {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .why-attend .card {
+        height: 500px;
+    }
+    .why-attend .card .card-body .card-title {
+        font-size: 16px;
+    }
+    .why-attend .card .card-body .card-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width: 418px){
+    .nav1 .langs{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .makers-attend .border{
+        font-size: 12px;
+        padding: 10px;
+        height: 120px;
+    }
+    header .nav1 ul li {
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .banner .banner-text h3 {
+        margin-top: 40%;
+    }
+    
+}
+@media only screen and (max-width: 375px) {
+    .duration .calendar h6 {
+        font-size: 18px;
+    }
+    .duration button {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+    .why-attend .card .card-body .card-title {
+        font-size: 18px;
+    }
+    .why-attend .card .card-body .card-text {
+        font-size: 15px;
+    }
+    .why-attend .card .card-body a{
+        font-size: 14px;
+        padding: 3px 20px;
+    }
+    .conversation .conv-top .btn-primary{
+        font-size: 18px;
+    }
+    .conversation .conv-top h4 {
+        color: #633289;
+        font-size: 20px;
+        margin-bottom: -15px;
+    }
+    .conversation .conv-top p {
+        font-size: 16px;
+        margin: 25px auto;
+        line-height: 26px;
+        width: 90%;
+    }
+    .banner .banner-text hr{
+        margin: auto;
+    }
+    .banner .banner-text h3 {
+        margin-top: 50%;
+    }
+    form button.d-flex{
+        padding: 5px 10px;
+    }
+    
+}
+
+/* end media query */
